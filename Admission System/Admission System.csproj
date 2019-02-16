@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB241021-6074-4289-903A-26DCF841518B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Admission_System</RootNamespace>
+    <AssemblyName>Admission System</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1stMeritList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1stMeritList.designer.cs">
+      <DependentUpon>1stMeritList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2ndMeritList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2ndMeritList.designer.cs">
+      <DependentUpon>2ndMeritList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admission Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admission Form.designer.cs">
+      <DependentUpon>Admission Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee Submission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee Submission.designer.cs">
+      <DependentUpon>Fee Submission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GGeneralListDataSet.cs">
+      <DependentUpon>GGeneralListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GGeneralListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GGeneralListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GMeritList1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMeritList1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GSearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Merit List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Merit List.designer.cs">
+      <DependentUpon>Merit List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeritList1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeritList1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics Report.designer.cs">
+      <DependentUpon>Statistics Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Records.designer.cs">
+      <DependentUpon>Student Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UGGeneralListDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UGGeneralListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UGMeritList2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UGMeritList2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1stMeritList.resx">
+      <DependentUpon>1stMeritList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2ndMeritList.resx">
+      <DependentUpon>2ndMeritList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admission Form.resx">
+      <DependentUpon>Admission Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee Submission.resx">
+      <DependentUpon>Fee Submission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GGeneralListReport.rdlc" />
+    <EmbeddedResource Include="GMeritList1Report.rdlc" />
+    <EmbeddedResource Include="GSearchReport.rdlc" />
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Merit List.resx">
+      <DependentUpon>Merit List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchReport.rdlc" />
+    <EmbeddedResource Include="Statistics Report.resx">
+      <DependentUpon>Statistics Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Records.resx">
+      <DependentUpon>Student Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UGGeneralListReport.rdlc" />
+    <EmbeddedResource Include="UGMeritList1Report.rdlc" />
+    <EmbeddedResource Include="UGMeritList2Repot.rdlc" />
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GGeneralListDataSet.xsc">
+      <DependentUpon>GGeneralListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GGeneralListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GGeneralListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GGeneralListDataSet.xss">
+      <DependentUpon>GGeneralListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GMeritList1DataSet.xsc">
+      <DependentUpon>GMeritList1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GMeritList1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GMeritList1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GMeritList1DataSet.xss">
+      <DependentUpon>GMeritList1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSearchDataSet.xsc">
+      <DependentUpon>GSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GSearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GSearchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GSearchDataSet.xss">
+      <DependentUpon>GSearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MeritList1DataSet.xsc">
+      <DependentUpon>MeritList1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MeritList1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MeritList1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MeritList1DataSet.xss">
+      <DependentUpon>MeritList1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SearchDataSet.xsc">
+      <DependentUpon>SearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SearchDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SearchDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SearchDataSet.xss">
+      <DependentUpon>SearchDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UGGeneralListDataSet.xsc">
+      <DependentUpon>UGGeneralListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UGGeneralListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UGGeneralListDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UGGeneralListDataSet.xss">
+      <DependentUpon>UGGeneralListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UGMeritList2DataSet.xsc">
+      <DependentUpon>UGMeritList2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UGMeritList2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UGMeritList2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UGMeritList2DataSet.xss">
+      <DependentUpon>UGMeritList2DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admission System.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Admission System_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Admission System.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

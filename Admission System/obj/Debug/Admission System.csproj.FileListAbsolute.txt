@@ -1,0 +1,3 @@
+F:\Study\Projects 4\Admission System\Admission System\bin\Debug\Admission System.exe.config
+F:\Study\Projects 4\Admission System\Admission System\obj\Debug\Admission System.exe
+F:\Study\Projects 4\Admission System\Admission System\obj\Debug\Admission System.pdb
